@@ -14,3 +14,6 @@ function clearWord(){
 
 subBtn.addEventListener("click", printWord);
 resetBtn.addEventListener("click", clearWord);
+
+
+console.log('heeeey');
