@@ -17,3 +17,4 @@ resetBtn.addEventListener("click", clearWord);
 
 
 console.log('heeeey');
+console.log('heeeey');
