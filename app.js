@@ -16,5 +16,6 @@ subBtn.addEventListener("click", printWord);
 resetBtn.addEventListener("click", clearWord);
 
 
-console.log('heeeey');
-console.log('heeeey');
+for(let i=0; i<20;i++){
+    document.write(i+"Hallo!!!!!!!")
+}
