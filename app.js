@@ -25,11 +25,12 @@
 //     document.write(i+"Hallo!!!!!!!")
 // }
 
-let zero = 0;
-let counter = 3;
+// let zero = 0;
+// let counter = 3;
 
-let my = [ 1, 3, "Ahmed","Mazero","Elham","Osama","Gamal","Ameer" ];
-let onlyNames = [];
+// let my = ["Ahmed","Mazero","Elham","Osama","Gamal","Ameer" ];
+// let colors =["red","white","blue"];
+// let onlyNames = [];
 // my = my.slice(zero,++counter).reverse();
 // // console.log(my);
 
@@ -49,11 +50,34 @@ let onlyNames = [];
 
 
 
-for(let i =0; i < my.length;i++){
-    
-    if( typeof my[i] === "string" ){
-        onlyNames.push(my[i]);
-    }
-}
+// for(let i = 0; i < my.length; i++){
 
-console.log(onlyNames);
+//         console.log(`# ${my[i]}`);
+        
+        
+    
+//     for(let j = 0; j < colors.length; j++){
+//         console.log(`+ ${colors[j]}`);
+//         // console.log(`---------`);
+//     }
+//     console.log(`---------`);
+// }
+
+
+let products = ["keyboard","mouse","pen","pad","monitor"];
+let colors =["red","white","blue"];
+let showCount = 3;
+
+document.write(`<h1>Show ${showCount} Products </h1>`);
+
+for(let i = 0; i < showCount; i++){
+    document.write(`<div>`);
+    document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
+    
+    for(let j = 0; j < colors.length; j++){
+    // document.write(`<p>${colors[j]}</p>`);
+    }
+    document.write(`<p>${colors.join(" | ")}</p>`);
+
+    document.write(`</div>`);
+}
