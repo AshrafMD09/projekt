@@ -64,20 +64,66 @@
 // }
 
 
-let products = ["keyboard","mouse","pen","pad","monitor"];
-let colors =["red","white","blue"];
-let showCount = 3;
+// let products = ["keyboard","mouse","pen","pad","monitor"];
+// let colors =   ["red","white","blue"];
+// let models =   [2023,2024];
+// let showCount = 3;
 
-document.write(`<h1>Show ${showCount} Products </h1>`);
+// document.write(`<h1>Show ${showCount} Products </h1>`);
 
-for(let i = 0; i < showCount; i++){
-    document.write(`<div>`);
-    document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
+// for(let i = 0; i < showCount; i++){
+//     document.write(`<div>`);
+//     document.write(`<h3>[${i + 1}] ${products[i]}</h3>`);
+
+//     for(let j = 0; j < colors.length; j++){
+
+//     }
+//     document.write(`<p>${colors.join(" | ")}</p>`);
+
+//     for(let k = 0; k < models.length; k++){
+
+//     }
+//     document.write(`<strong>${models.join(" | ")}</strong>`);
     
-    for(let j = 0; j < colors.length; j++){
-    // document.write(`<p>${colors[j]}</p>`);
-    }
-    document.write(`<p>${colors.join(" | ")}</p>`);
+//     document.write(`</div>`);
+// }
 
-    document.write(`</div>`);
+
+// The 3 Arrays
+let myAdmins = ["Ahmed","Osama","Sayed","Stop","Samera"];
+let myEmployees = ["Amgad","Samah","Ameer","Omar","Othman","Amany","Samia"];
+let ActiveAdmins = [];
+
+// Showing the Total of Admins (3)
+for(let i = 0; i < myAdmins.length; i++){
+    if(myAdmins[i] === "Stop"){
+        break;
+    }
+    ActiveAdmins.push(myAdmins[i]);
 }
+document.write(`<h3> We Have ${ActiveAdmins.length} Admins </h3>`);
+document.write(`<hr>`);
+
+// The Admin For Team Number X is Admin X
+for(let j = 0; j < myAdmins.length; j++){
+
+    if(myAdmins[j] === "Stop"){
+        break;
+    }
+        document.write(`<div>`);
+
+        document.write(`<h2> The Admin For Team ${j + 1} is ${myAdmins[j]} </h2>`);
+        document.write(`<h3> Team Members :</h3>`);
+
+// Team Members sorted by Alphabets
+    for(let k = 0; k < myEmployees.length; k++){
+        if(myEmployees[k][0] === myAdmins[j][0]){
+            document.write(`<p> - ${myEmployees[k]}</p>`);
+        }
+    }
+        document.write(`<hr>`);
+        document.write(`</div>`);
+
+}
+
+
