@@ -89,41 +89,64 @@
 // }
 
 
-// The 3 Arrays
-let myAdmins = ["Ahmed","Osama","Sayed","Stop","Samera"];
-let myEmployees = ["Amgad","Samah","Ameer","Omar","Othman","Amany","Samia"];
-let ActiveAdmins = [];
+// // The 3 Arrays
+// let myAdmins = ["Ahmed","Osama","Sayed","Stop","Samera"];
+// let myEmployees = ["Amgad","Samah","Ameer","Omar","Othman","Amany","Samia"];
+// let ActiveAdmins = [];
 
-// Showing the Total of Admins (3)
-for(let i = 0; i < myAdmins.length; i++){
-    if(myAdmins[i] === "Stop"){
-        break;
-    }
-    ActiveAdmins.push(myAdmins[i]);
+// // Showing the Total of Admins (3)
+// for(let i = 0; i < myAdmins.length; i++){
+//     if(myAdmins[i] === "Stop"){
+//         break;
+//     }
+//     ActiveAdmins.push(myAdmins[i]);
+// }
+// document.write(`<h3> We Have ${ActiveAdmins.length} Admins </h3>`);
+// document.write(`<hr>`);
+
+// // The Admin For Team Number X is Admin X
+// for(let j = 0; j < myAdmins.length; j++){
+
+//     if(myAdmins[j] === "Stop"){
+//         break;
+//     }
+//         document.write(`<div>`);
+
+//         document.write(`<h2> The Admin For Team ${j + 1} is ${myAdmins[j]} </h2>`);
+//         document.write(`<h3> Team Members :</h3>`);
+
+// // Team Members sorted by Alphabets
+//     for(let k = 0; k < myEmployees.length; k++){
+//         if(myEmployees[k][0] === myAdmins[j][0]){
+//             document.write(`<p> - ${myEmployees[k]}</p>`);
+//         }
+//     }
+//         document.write(`<hr>`);
+//         document.write(`</div>`);
+
+// }
+
+
+function hiringTest(...data){
+
+    let name, age, isAvailable;
+
+    for(let i = 0; i < data.length; i++){
+
+        typeof (data[i]) === "string" ? 
+            name =  data[i]
+
+        : typeof (data[i]) === "number" ? 
+            age = data[i]
+
+        : data[i] === true ?
+            isAvailable = ", you are Available for Hire" :  isAvailable = ", you are not Available for Hire";
 }
-document.write(`<h3> We Have ${ActiveAdmins.length} Admins </h3>`);
-document.write(`<hr>`);
-
-// The Admin For Team Number X is Admin X
-for(let j = 0; j < myAdmins.length; j++){
-
-    if(myAdmins[j] === "Stop"){
-        break;
-    }
-        document.write(`<div>`);
-
-        document.write(`<h2> The Admin For Team ${j + 1} is ${myAdmins[j]} </h2>`);
-        document.write(`<h3> Team Members :</h3>`);
-
-// Team Members sorted by Alphabets
-    for(let k = 0; k < myEmployees.length; k++){
-        if(myEmployees[k][0] === myAdmins[j][0]){
-            document.write(`<p> - ${myEmployees[k]}</p>`);
-        }
-    }
-        document.write(`<hr>`);
-        document.write(`</div>`);
-
+document.write(`<h3>Hello ${name}, 
+                Your Age is ${age}
+                ${isAvailable}.</h3>`);
 }
 
-
+hiringTest(false, "ashraf" , 34);
+hiringTest("ashraf", true , 34);
+hiringTest("ashraf", 22 , false);
