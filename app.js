@@ -245,24 +245,22 @@
 // }).reduce( function(acc,curr){
 //     return `${acc}${curr}`;
 // });
- 
+
 // console.log(rmv);
 
 
 
-let removeChars = ["E","@","@","L","Z","@","@","E","R","@","O"];
+let myString = "1,2,3,EE,l,z,e,r,o,_,w,e,b,_,S,c,h,o,o,l,2,0,Z";
 
-let rmv = removeChars.filter(function(e){
-    // return e === "@" ? "" : e;
-       return !e.startsWith("@");
+let solution = myString.split(",").map(function(e){
 
+    return !isNaN(e) ?
+    e =  "" : e === "_" ? e = " "  :
+    e.startsWith("E") ? e = "E" : e.startsWith("Z") ? e = "" : e
+    
+}).reduce(function(e,curr){
+    return `${e}${curr}`;
 });
 
-console.log(forTest);
-
-
-
-
-
-
+console.log(solution); // Output is : Elzero web School
 
