@@ -127,26 +127,142 @@
 // }
 
 
-function hiringTest(...data){
+// function hiringTest(...data){
 
-    let name, age, isAvailable;
+//     let name, age, isAvailable;
 
-    for(let i = 0; i < data.length; i++){
+//     for(let i = 0; i < data.length; i++){
 
-        typeof (data[i]) === "string" ? 
-            name =  data[i]
+//         typeof (data[i]) === "string" ? 
+//             name =  data[i]
 
-        : typeof (data[i]) === "number" ? 
-            age = data[i]
+//         : typeof (data[i]) === "number" ? 
+//             age = data[i]
 
-        : data[i] === true ?
-            isAvailable = ", you are Available for Hire" :  isAvailable = ", you are not Available for Hire";
-}
-document.write(`<h3>Hello ${name}, 
-                Your Age is ${age}
-                ${isAvailable}.</h3>`);
-}
+//         : data[i] === true ?
+//             isAvailable = ", you are Available for Hire" :  isAvailable = ", you are not Available for Hire";
+// }
+// document.write(`<h3>Hello ${name}, 
+//                 Your Age is ${age}
+//                 ${isAvailable}.</h3>`);
+// }
 
-hiringTest(false, "ashraf" , 34);
-hiringTest("ashraf", true , 34);
-hiringTest("ashraf", 22 , false);
+// hiringTest(false, "ashraf" , 34);
+// hiringTest("ashraf", true , 34);
+// hiringTest("ashraf", 22 , false);
+
+// let swappingCases = "elZERo";
+// let invertedNumbers = [1,-10,-20,100,-30];
+// let ignoreNumbers = "Elz123er4o";
+
+// let sw = swappingCases.split("").map( function (e){
+//     return e == e.toLowerCase() ? e.toUpperCase() : e.toLowerCase();
+// }).join("");
+
+// console.log(sw);
+
+// let inv = invertedNumbers.map(function (e){
+//     return -e;
+// });
+
+// console.log(inv.join(" | "));
+
+// let igNum = ignoreNumbers.split("").map( function (e){
+//     return isNaN(e) ? e : "";
+// }).join("");
+
+// console.log(igNum);
+
+
+// let igStr = ignoreNumbers.split("").map( function (e){
+//     return isNaN(e) ? "" : e;
+// }).join("");
+
+
+// console.log(igStr);
+
+// let people = ["Ahmed","Osama","Sayed","Stop","Samera"];
+
+// let pp = people.filter(function(e){
+//     return e[0] == "S";
+//     // return e.startsWith("S");
+// });
+
+
+// console.log(pp);
+
+// let sentence = "I Love Foood Code Too Playing Much";
+
+// let ftc = sentence.split(" ").filter(function (e){
+//     return e.length <= 4  ;
+// });
+
+// console.log(ftc.join(" "));
+
+// let ignoreNumbers = "Elz123er4o";
+
+// let igNum = ignoreNumbers.split("").filter( function (e){
+//     return isNaN(e);
+// }).join("");
+
+// console.log(igNum);
+
+// let mix = "A13BS2ZX";
+
+// let mx = mix.split("").filter(function(e){
+//     return !isNaN(parseInt(e));
+// })
+// .map(function (e){
+//     return e*e;
+// })
+// .join(" | ");
+
+// console.log(mx);
+
+// let list = [1,2,3,4];
+
+// let ls = list.reduce( function (acc,ele){
+// return acc + ele; 
+// }, 10); // start mit 10 
+
+// console.log(ls); // Output : 10 + die summe von allen zahlen auf dem array
+
+// let theBiggest = ["Bla","Propaganda","Other","AAA","Batteooooory","Test"];
+
+// let check = theBiggest.reduce(function(acc,current){
+//     return  acc.length > current.length ? acc : current;
+// });
+
+// console.log(check);
+
+
+// let removeChars = ["E","@","@","L","Z","@","@","E","R","@","O"];
+
+// let rmv = removeChars.filter(function(e){
+//     // return e === "@" ? "" : e;
+//        return !e.startsWith("@");
+
+// }).reduce( function(acc,curr){
+//     return `${acc}${curr}`;
+// });
+ 
+// console.log(rmv);
+
+
+
+let removeChars = ["E","@","@","L","Z","@","@","E","R","@","O"];
+
+let rmv = removeChars.filter(function(e){
+    // return e === "@" ? "" : e;
+       return !e.startsWith("@");
+
+});
+
+console.log(forTest);
+
+
+
+
+
+
+
