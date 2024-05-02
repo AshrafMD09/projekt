@@ -250,17 +250,19 @@
 
 
 
-let myString = "1,2,3,EE,l,z,e,r,o,_,w,e,b,_,S,c,h,o,o,l,2,0,Z";
+// let myString = "1,2,3,EE,l,z,e,r,o,_,w,e,b,_,S,c,h,o,o,l,2,0,Z";
 
-let solution = myString.split(",").map(function(e){
+// let solution = myString.split(",").map(function(e){
 
-    return !isNaN(e) ?
-    e =  "" : e === "_" ? e = " "  :
-    e.startsWith("E") ? e = "E" : e.startsWith("Z") ? e = "" : e
+//     return !isNaN(e) ?
+//     e =  "" : e === "_" ? e = " "  :
+//     e.startsWith("E") ? e = "E" : e.startsWith("Z") ? e = "" : e
     
-}).reduce(function(e,curr){
-    return `${e}${curr}`;
-});
+// }).reduce(function(e,curr){
+//     return `${e}${curr}`;
+// });
 
-console.log(solution); // Output is : Elzero web School
+// console.log(solution); // Output is : Elzero web School
 
+let y=2
+console.log(++y);
